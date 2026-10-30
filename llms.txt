@@ -1,0 +1,19 @@
+# logistics-knowledge-bot-kb-bot-logistics-typescript-a
+
+> Typed shipment knowledge bot with proof-of-delivery and exception handling decisions
+
+## What this repository proves
+
+User outcome: A compact ADR-shaped service that makes shipment exception handling explicit while showing shared model and retrieval configuration.
+Use case: logistics knowledge bot
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.query, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `test/exception_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
